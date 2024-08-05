@@ -4,6 +4,10 @@ import { devtools, persist } from "zustand/middleware";
 
 const todoStore = (set) => ({
   todos: [],
+  fetchTodos: async () => {
+    const todos = await getTodos();
+    set({ todos });
+  },
   addTodo: (todo) => {
     set((state) => ({
       todos: [todo, ...state.todos],

@@ -1,14 +1,19 @@
-import "./App.css";
-import TodoForm from "./components/TodoForm";
-import Todos from "./components/Todos";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Todos from "./pages/Todos";
 
 function App() {
   return (
-    <div className="app-container">
-      <h1>My Todo's</h1>
-      <TodoForm />
-      <Todos />
-    </div>
+    <Router>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/todos">Todos</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/todos" element={<Todos />} />
+      </Routes>
+    </Router>
   );
 }
 
