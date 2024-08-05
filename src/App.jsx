@@ -5,7 +5,7 @@ import Todos from "./pages/Todos";
 function App() {
   return (
     <Router>
-      <nav>
+      <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/todos">Todos</Link>
       </nav>

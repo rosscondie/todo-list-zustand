@@ -15,9 +15,7 @@ const Todos = () => {
       <h1>Todos</h1>
       <TodoForm />
       <ul>
-        {todos.map((todo) => (
-          <TodoItem key={todo.id} todo={todo} />
-        ))}
+        <TodoItem />
       </ul>
     </div>
   );
