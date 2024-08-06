@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useTodoStore from "../store/todoStore.jsx";
+import useTodoStore from "../store/todoStore.js";
 
 const Todos = () => {
   const { todos, deleteTodo, toggleTodo, editTodo } = useTodoStore((state) => ({

@@ -4,7 +4,7 @@ import TodoForm from "../components/TodoForm";
 import TodoItem from "../components/TodoItem";
 import "../App.css";
 const Todos = () => {
-  const { todos, fetchTodos } = useTodoStore();
+  const { fetchTodos } = useTodoStore();
 
   useEffect(() => {
     fetchTodos();

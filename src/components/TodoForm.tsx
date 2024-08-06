@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-import useTodoStore from "../store/todoStore.jsx";
+import useTodoStore from "../store/todoStore.js";
 
 const TodoForm = () => {
   const addTodo = useTodoStore((state) => state.addTodo);
